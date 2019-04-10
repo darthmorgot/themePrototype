@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, width=device-width">
+
+	<title>Test horizontal scroll</title>
+
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+</head>
+<body>
+
+	<div class="mask"></div>
+	<header class="header">
+		<h1>Звезды ждут...</h1>
+		<p>Субъективный блог о человеке, земле, вселенной</p>
+	</header>
+	<div class="scroll">
+		<img src="images/mars.jpg" class="img" alt="picture">
+		<div class="section-2">
+			<div class="block block-1">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque illum reprehenderit officiis nemo laboriosam velit quae, ea nihil totam nostrum ullam doloribus, autem possimus architecto quis obcaecati neque optio eaque quasi veritatis. Perspiciatis ex ducimus, id amet cupiditate nulla deserunt laudantium rem praesentium rerum eveniet veniam ea labore, repellendus. Adipisci accusantium cum omnis eveniet fugit inventore consequuntur! Sunt dolorem inventore enim. Eos quia neque, exercitationem omnis culpa officiis natus mollitia veniam consequuntur odio minima maiores tenetur deserunt laboriosam quod necessitatibus totam molestiae! Ut, numquam consectetur officia saepe id iusto animi obcaecati qui neque dolore, natus quisquam, deleniti dicta quam soluta!
+			</div>
+			<div class="block block-2">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque illum reprehenderit officiis nemo laboriosam velit quae, ea nihil totam nostrum ullam doloribus, autem possimus architecto quis obcaecati neque optio eaque quasi veritatis. Perspiciatis ex ducimus, id amet cupiditate nulla deserunt laudantium rem praesentium rerum eveniet veniam ea labore, repellendus. Adipisci accusantium cum omnis eveniet fugit inventore consequuntur! Sunt dolorem inventore enim. Eos quia neque, exercitationem omnis culpa officiis natus mollitia veniam consequuntur odio minima maiores tenetur deserunt laboriosam quod necessitatibus totam molestiae! Ut, numquam consectetur officia saepe id iusto animi obcaecati qui neque dolore, natus quisquam, deleniti dicta quam soluta!
+			</div>
+			<div class="block block-3">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque illum reprehenderit officiis nemo laboriosam velit quae, ea nihil totam nostrum ullam doloribus, autem possimus architecto quis obcaecati neque optio eaque quasi veritatis. Perspiciatis ex ducimus, id amet cupiditate nulla deserunt laudantium rem praesentium rerum eveniet veniam ea labore, repellendus. Adipisci accusantium cum omnis eveniet fugit inventore consequuntur! Sunt dolorem inventore enim. Eos quia neque, exercitationem omnis culpa officiis natus mollitia veniam consequuntur odio minima maiores tenetur deserunt laboriosam quod necessitatibus totam molestiae! Ut, numquam consectetur officia saepe id iusto animi obcaecati qui neque dolore, natus quisquam, deleniti dicta quam soluta!
+			</div>
+			<div class="block block-4">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque illum reprehenderit officiis nemo laboriosam velit quae, ea nihil totam nostrum ullam doloribus, autem possimus architecto quis obcaecati neque optio eaque quasi veritatis. Perspiciatis ex ducimus, id amet cupiditate nulla deserunt laudantium rem praesentium rerum eveniet veniam ea labore, repellendus. Adipisci accusantium cum omnis eveniet fugit inventore consequuntur! Sunt dolorem inventore enim. Eos quia neque, exercitationem omnis culpa officiis natus mollitia veniam consequuntur odio minima maiores tenetur deserunt laboriosam quod necessitatibus totam molestiae! Ut, numquam consectetur officia saepe id iusto animi obcaecati qui neque dolore, natus quisquam, deleniti dicta quam soluta!
+			</div>
+			<div class="block block-5">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque illum reprehenderit officiis nemo laboriosam velit quae, ea nihil totam nostrum ullam doloribus, autem possimus architecto quis obcaecati neque optio eaque quasi veritatis. Perspiciatis ex ducimus, id amet cupiditate nulla deserunt laudantium rem praesentium rerum eveniet veniam ea labore, repellendus. Adipisci accusantium cum omnis eveniet fugit inventore consequuntur! Sunt dolorem inventore enim. Eos quia neque, exercitationem omnis culpa officiis natus mollitia veniam consequuntur odio minima maiores tenetur deserunt laboriosam quod necessitatibus totam molestiae! Ut, numquam consectetur officia saepe id iusto animi obcaecati qui neque dolore, natus quisquam, deleniti dicta quam soluta!
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<span>&copy; 2019 Starswaiting.ru</span>
+	</footer>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script>
+
+		(function($){
+			$(window).on("load", function () {
+				$(".scroll").mCustomScrollbar({
+					axis: 'x',
+					theme: 'minimal',
+					// scrollbarPosition: 'outside',
+					advanced:{
+						autoExpandHorizontalScroll: true
+					},
+				});
+			});
+		})(jQuery);
+
+	</script>
+</body>
+</html>
