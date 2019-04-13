@@ -184,8 +184,9 @@ template {
 
 .wrapper {
 	width: 7000px;
-	height: calc(100vh - 209px);
-	background: url(../images/mars.jpg) no-repeat center center;
+	height: calc(100vh - 191px);
+	background: url(../images/mars.jpg) no-repeat 0 30%;
+	background-size: cover;
 }
 
 .scroll .img {
@@ -227,6 +228,9 @@ template {
 }
 
 .footer {
+	position: absolute;
+	bottom: 0;
+	width: 300px;
 	color: #313131;
 }
 
