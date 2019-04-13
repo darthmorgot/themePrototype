@@ -147,19 +147,32 @@ template {
 }
 
 /* --------------------- Custom style ------------------------------ */
+
+/* CSS variables */
+:root {
+	--header-height: 6.25em;
+}
+
 .header {
+	height: var(--header-height);
 	margin: 0 auto;
-	padding: 20px 0 20px 0;
+	padding: 0.625em 0;
 	text-align: center;
-	color: #313131;
+	color: #fff;
+	background-color: #313131;
+	box-sizing: border-box;
 }
 
 .header h1 {
-	font-size: 2.5em;
+	font-size: 3em;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .header p {
-	font-size: 1.5em;
+	font-size: 1.3em;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .main {
@@ -184,7 +197,7 @@ template {
 
 .wrapper {
 	width: 7000px;
-	height: calc(100vh - 191px);
+	height: calc(100vh - var(--header-height));
 	background: url(../images/mars.jpg) no-repeat 0 30%;
 	background-size: cover;
 }
@@ -231,7 +244,8 @@ template {
 	position: absolute;
 	bottom: 0;
 	width: 300px;
-	color: #313131;
+	color: #fff;
+	background-color: #313131;
 }
 
 #mCSB_1_scrollbar_horizontal {
