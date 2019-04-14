@@ -146,12 +146,48 @@ template {
 	display: none;
 }
 
+/* ---------------------------------- Fonts ------------------------------------- */
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Regular-webfont.eot');
+	src: url('../fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/Roboto-Regular-webfont.woff') format('woff'),
+			 url('../fonts/Roboto-Regular-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Robotobold';
+	src: url('../fonts/Roboto-Bold-webfont.eot');
+	src: url('../fonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/Roboto-Bold-webfont.woff') format('woff'),
+			 url('../fonts/Roboto-Bold-webfont.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Robotoitalic';
+	src: url('../fonts/Roboto-Italic-webfont.eot');
+	src: url('../fonts/Roboto-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/Roboto-Italic-webfont.woff') format('woff'),
+			 url('../fonts/Roboto-Italic-webfont.ttf') format('truetype'),
+	font-weight: normal;
+	font-style: italic;
+}
+
 /* --------------------- Custom style ------------------------------ */
 
 /* CSS variables */
 :root {
-	--header-height: 6.25em;
+	--header-height: 7.25em;
 	--sidebar-width: 18.75em;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
 }
 
 .header {
@@ -166,12 +202,14 @@ template {
 
 .header h1 {
 	font-size: 3em;
+	font-weight: bold;
 	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: 0.25em;
 }
 
 .header p {
-	font-size: 1.3em;
+	font-size: 1.2em;
+	font-weight: normal;
 	margin-top: 0;
 	margin-bottom: 0;
 }
@@ -207,41 +245,42 @@ template {
 	color: #fff;
 	padding: 10px;
 	width: 500px;
-	height: 300px;
 	position: absolute;
 }
 
 .block-1 {
 	left: 500px;
-	top: 150px;
+	top: 15vh;
 }
 
 .block-2 {
 	left: 2000px;
-	top: 350px;
+	top: 35vh;
 }
 
 .block-3 {
 	left: 3500px;
-	top: 500px;
+	top: 50vh;
 }
 
 .block-4 {
 	left: 5000px;
-	top: 50px;
+	top: 5vh;
 }
 
 .block-5 {
 	left: 6000px;
-	top: 400px;
+	top: 40vh;
 }
 
 .footer {
 	position: absolute;
 	bottom: 0;
 	width: 300px;
+	padding: 1em;
 	color: #fff;
 	background-color: #313131;
+	box-sizing: border-box;
 }
 
 #mCSB_1_scrollbar_horizontal {
