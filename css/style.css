@@ -196,7 +196,8 @@ body {
 	padding: 0.625em 0;
 	text-align: center;
 	color: #fff;
-	background-color: #313131;
+	background: #051721 url(../images/header-back.jpg) center center;
+	background-size: contain;
 	box-sizing: border-box;
 }
 
@@ -205,6 +206,8 @@ body {
 	font-weight: bold;
 	margin-top: 0;
 	margin-bottom: 0.25em;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
 }
 
 .header p {
@@ -212,6 +215,7 @@ body {
 	font-weight: normal;
 	margin-top: 0;
 	margin-bottom: 0;
+	text-transform: uppercase;
 }
 
 .main {
@@ -251,6 +255,7 @@ body {
 .block-1 {
 	left: 500px;
 	top: 15vh;
+	/* bottom? */
 }
 
 .block-2 {
@@ -279,7 +284,7 @@ body {
 	width: 300px;
 	padding: 1em;
 	color: #fff;
-	background-color: #313131;
+	background-color: #051721;
 	box-sizing: border-box;
 }
 
