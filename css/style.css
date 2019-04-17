@@ -188,16 +188,17 @@ template {
 
 body {
 	font-family: 'Roboto', sans-serif;
+	color: #faedc0;
 }
 
+/* Header style */
 .header {
 	height: var(--header-height);
 	margin: 0 auto;
 	padding: 0.625em 0;
 	text-align: center;
-	color: #fff;
-	background: #051721 url(../images/header-back.jpg) center center;
-	background-size: contain;
+	background: #051721 url(../images/header-back.jpg);
+	/*background-size: contain;*/
 	box-sizing: border-box;
 }
 
@@ -218,6 +219,7 @@ body {
 	text-transform: uppercase;
 }
 
+/* Main style */
 .main {
 	display: flex;
 }
@@ -226,8 +228,35 @@ body {
 	flex: 1 0 var(--sidebar-width);
 	width: var(--sidebar-width);
 	box-sizing: border-box;
+	background: #051721 url(../images/header-back.jpg) 0 2%;
+	padding-left: 10px;
 }
 
+/* Menu style */
+.nav__list {
+	list-style: none;
+	padding-left: 15px;
+}
+
+.nav__item {
+	margin-bottom: 10px;
+}
+
+.nav__link {
+	text-decoration: none;
+	color: #faedc0;
+	font-size: 24px;
+	text-transform: uppercase;
+	transition: all 0.3s;
+}
+
+.nav__active,
+.nav__link:hover {
+	color: #fff;
+	text-shadow: 0 0 0.2em rgba(255, 255, 255, 0.5), 0 0 0.5em rgba(255, 255, 255, 0.5);
+}
+
+/* Content style */
 .scroll {
 	width: calc(100% - var(--sidebar-width));
 	overflow-x: auto;
@@ -240,13 +269,12 @@ body {
 .wrapper {
 	width: 7000px;
 	height: calc(100vh - var(--header-height));
-	background: url(../images/mars.jpg) no-repeat 0 25%;
+	background: #faedc0 url(../images/mars.jpg) no-repeat 0 25%;
 	background-size: cover;
 }
 
 .block {
-	background-color: rgb(72, 72, 72);
-	color: #fff;
+	background-color: #6a453c;
 	padding: 10px;
 	width: 500px;
 	position: absolute;
@@ -283,8 +311,7 @@ body {
 	bottom: 0;
 	width: 300px;
 	padding: 1em;
-	color: #fff;
-	background-color: #051721;
+	background: #051721 url(../images/header-back.jpg);
 	box-sizing: border-box;
 }
 
