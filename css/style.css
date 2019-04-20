@@ -313,11 +313,25 @@ body {
 	position: absolute;
 }
 
-.article {
+.preview {
 	background-color: rgba(106, 69, 60, 0.7);
 	padding: 10px;
 	border: 2px solid #20B7DF;
 	border-radius: 5px;
+}
+
+.preview__title-link,
+.preview__more {
+	color: #faedc0;
+	text-decoration: none;
+}
+
+.preview__more {
+	text-transform: uppercase;
+}
+
+.preview__more:hover {
+	text-decoration: underline;
 }
 
 .block-1,

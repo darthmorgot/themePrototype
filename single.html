@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, width=device-width">
+
+	<title>Theme prototype | Single</title>
+
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+</head>
+<body>
+
+	<header class="header">
+		<h1>Звезды ждут...</h1>
+		<p>Субъективный блог о человеке, земле, вселенной</p>
+	</header>
+
+	<main class="main">
+		<div class="sidebar">
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="index.html" class="nav__link nav__active">Главная</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Человек</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Земля</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Вселенная</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Автор</a></li>
+				</ul>
+			</nav>
+			<div class="search">
+				<form action="">
+					<input type="search" class="search__string" placeholder="Поиск">
+					<input type="submit" class="search__btn" value="">
+				</form>
+			</div>
+		</div>
+
+		<div class="scroll">
+			<div class="wrapper">
+				<div class="block block-1">
+					<article class="article">
+						<h1>Первая статья</h1>
+						<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Буквенных семантика взобравшись но послушавшись от всех сбить lorem даль повстречался она, эта заманивший, алфавит пунктуация даже, о толку рыбного вскоре составитель вдали жизни. Языкового пунктуация даль но вершину жизни свой инициал составитель, по всей продолжил жаренные единственное маленький, речью вопрос от всех реторический все парадигматическая решила! Ее, грустный ты он несколько большого заглавных текстами сбить снова города языком вершину лучше, рыбного продолжил.</p>
+					</article>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<span>&copy; 2019 Звезды ждут...</span>
+	</footer>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script>
+
+		(function($){
+			$(window).on("load", function () {
+				$(".scroll").mCustomScrollbar({
+					axis: 'x',
+					theme: 'minimal-dark',
+					autoExpandScrollbar: true,
+					advanced:{
+						autoExpandHorizontalScroll: true
+					},
+				});
+			});
+		})(jQuery);
+
+	</script>
+</body>
+</html>
