@@ -120,17 +120,52 @@ body {
 
 /* Main style */
 .main {
-	background: url(../images/bg-grid.png), url(../images/mars.jpg) no-repeat 0 25%;
+	background: url(../images/bg-grid.png), url(../images/home-back.jpg) no-repeat center center;
 	background-color: #faedc0;
 	background-size: auto, cover;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .manifest {
-
+	border-radius: 3px;
+	padding: 20px;
+	background-color: rgba(106, 69, 60, 0.7);
 }
 
 .manifest__title {
 	margin-top: 0;
+	text-align: center;
+}
+
+.preview {
+	background-color: rgba(106, 69, 60, 0.7);
+	padding: 10px;
+	border-radius: 5px;
+	margin-top: 30px;
+}
+
+.preview__title-link {
+	letter-spacing: 0.01em;
+}
+
+.preview__title-link,
+.preview__more {
+	color: #faedc0;
+	text-decoration: none;
+}
+
+.preview__more {
+	text-transform: uppercase;
+}
+
+.preview__more:hover {
+	text-decoration: underline;
 }
 
 /* Footer style */
@@ -138,11 +173,6 @@ body {
 	padding: 1em;
 	background: #051721 url(../images/main-back.jpg);
 	box-sizing: border-box;
-}
-
-#mCSB_1_scrollbar_horizontal {
-	margin-left: 0;
-	margin-right: 0;
 }
 
 /* Media queries */
